@@ -1,5 +1,10 @@
 /// Crear una función que muestre "¡Hola, mundo!" en la consola.
+let mensaje = mostrarMensaje();
 
+function mostrarMensaje() {
+    let mensaje = "¡Hola, mundo!";
+    return console.log(mensaje);
+}
 
 /// Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
 
