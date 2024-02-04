@@ -7,11 +7,22 @@ function mostrarMensaje() {
 }
 
 /// Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
+let saludo = mostrarSaludo();
 
-
+function mostrarSaludo(saludo) {
+    let nombre = "Julian";
+    return console.log(`¡Hola, ${nombre}!`);
+        
+}
 
 /// Crear una función que reciba un número como parámetro y devuelva el doble de ese número.
+let numeroSimple = duplicarValor();
 
+function duplicarValor() {
+    let numeroSimple = parseInt(5);
+    return console.log(numeroSimple*2);
+
+}
 
 
 /// Crear una función que reciba tres números como parámetros y devuelva su promedio.
