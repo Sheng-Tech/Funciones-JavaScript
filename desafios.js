@@ -24,13 +24,34 @@ function duplicarValor() {
 
 }
 
-
 /// Crear una función que reciba tres números como parámetros y devuelva su promedio.
 
+let numerosParaValorar = valorPromedio();
 
+function valorPromedio() {
+    let numeroUno = parseInt(5);
+    let numeroDos = parseInt(16);
+    let numeroTres = parseInt(8);
+    
+    console.log(numeroUno+numeroDos+numeroTres/3);
+
+    return; /// console.log(Math.floor(numeroUno+numeroDos+numeroTres/3));
+
+}
 
 /// Crear una función que reciba dos números como parámetros y devuelva el mayor de ellos.
+let numeroMayor = buscarMayor();
 
+function buscarMayor() {
+    let numero1 = parseInt(37);
+    let numero2 = parseInt(65);
 
+    if (numero1 > numero2) {
+        return console.log(numero1);
+    } else {
+        return console.log(numero2);
+    }
+  
+}
 
 /// Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.
