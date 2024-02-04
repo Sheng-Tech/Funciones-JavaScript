@@ -55,3 +55,11 @@ function buscarMayor() {
 }
 
 /// Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.
+let numeroInicial = multiplicarValor();
+
+function multiplicarValor() {
+    let numeroInicial = parseInt(5);
+    return console.log(numeroInicial*numeroInicial);
+
+}
+
