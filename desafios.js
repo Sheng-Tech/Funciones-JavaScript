@@ -1,65 +1,63 @@
 /// Crear una función que muestre "¡Hola, mundo!" en la consola.
-let mensaje = mostrarMensaje();
 
 function mostrarMensaje() {
-    let mensaje = "¡Hola, mundo!";
-    return console.log(mensaje);
+    let mensaje = ("¡Hola, mundo!");
+    console.log(mensaje);
 }
 
-/// Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
-let saludo = mostrarSaludo();
+mostrarMensaje();
 
-function mostrarSaludo(saludo) {
+
+/// Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
+///let saludo = mostrarSaludo();
+
+function mostrarSaludo() {
     let nombre = "Julian";
-    return console.log(`¡Hola, ${nombre}!`);
+    console.log(`¡Hola, ${nombre}!`);
         
 }
 
-/// Crear una función que reciba un número como parámetro y devuelva el doble de ese número.
-let numeroSimple = duplicarValor();
+mostrarSaludo();
 
-function duplicarValor() {
-    let numeroSimple = parseInt(5);
-    return console.log(numeroSimple*2);
+
+/// Crear una función que reciba un número como parámetro y devuelva el doble de ese número.
+
+function duplicarValor(numeroSimple) {
+    
+    return numeroSimple*2;
 
 }
+
+let valorDoble = duplicarValor(8);
+console.log(valorDoble);
 
 /// Crear una función que reciba tres números como parámetros y devuelva su promedio.
 
-let numerosParaValorar = valorPromedio();
-
-function valorPromedio() {
-    let numeroUno = parseInt(5);
-    let numeroDos = parseInt(16);
-    let numeroTres = parseInt(8);
+function valorPromedio(num1, num2, num3) {
     
-    console.log(numeroUno+numeroDos+numeroTres/3);
-
-    return; /// console.log(Math.floor(numeroUno+numeroDos+numeroTres/3));
+    return (num1+num2+num3)/3;
 
 }
 
+let promedios = valorPromedio(6,13,77);
+console.log(promedios);
+
 /// Crear una función que reciba dos números como parámetros y devuelva el mayor de ellos.
-let numeroMayor = buscarMayor();
+let numeroMayor = buscarMayor(77,22);
 
-function buscarMayor() {
-    let numero1 = parseInt(37);
-    let numero2 = parseInt(65);
+function buscarMayor(numero1,numero2) {
 
-    if (numero1 > numero2) {
-        return console.log(numero1);
-    } else {
-        return console.log(numero2);
-    }
+    return numero1 > numero2 ? numero1 : numero2;
   
 }
 
+console.log(numeroMayor);
+
 /// Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.
-let numeroInicial = multiplicarValor();
 
-function multiplicarValor() {
-    let numeroInicial = parseInt(5);
-    return console.log(numeroInicial*numeroInicial);
-
+function valorDuplicado(numeroInicial) {
+    return numeroInicial * numeroInicial;
+    
 }
-
+let solucion = valorDuplicado(5);
+console.log(solucion);
